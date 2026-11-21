@@ -282,3 +282,28 @@ body {
         transition: none;
     }
 }
+
+/* Los dos botones (descargar y WhatsApp) juntos, en el lugar donde estaba solo el de WhatsApp */
+.acciones {
+    display: flex;
+    gap: 8px;
+}
+
+.btn-exportar {
+    padding: 0;
+    border: 0;
+    background: none;
+    cursor: pointer;
+}
+
+.icons a {
+    display: inline-flex;
+    text-decoration: none;
+}
+
+/* Al exportar: el desenfoque de vidrio no se captura bien, así que se usa un fondo sólido del mismo tono */
+.swiper-slide.exportando {
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+    background: linear-gradient(160deg, #5c6876 0%, #38414d 55%, #262d37 100%);
+}
