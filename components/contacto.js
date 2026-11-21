@@ -1,9 +1,10 @@
 // Lógica del contacto. Se ejecuta cuando components.js inserta el componente.
 
 const CONTACTO = {
-    telefono: "50300000000",          // con código de país, sin + ni espacios (503 = El Salvador)
-    telefonoVisible: "+503 0000 0000",
-    correo: "correo@tudominio.com",
+    //telefono: "50371514313",          // KALIN
+    telefono: "50376302568",          // con código de país, sin + ni espacios (503 = El Salvador)
+    telefonoVisible: "+503 7630 2568",
+    correo: "fg796041@gmail.com",
     saludo: "Hola, me interesa una puerta del catálogo.",
 };
 
