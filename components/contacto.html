@@ -1,0 +1,36 @@
+<section class="contacto" aria-labelledby="contacto-titulo">
+    <div class="contacto-panel">
+
+        <p class="contacto-etiqueta">Contacto</p>
+        <h2 id="contacto-titulo">Cotiza tu puerta</h2>
+        <p class="contacto-texto">
+            Cuéntanos qué modelo te interesó y te respondemos con medidas y precio.
+        </p>
+
+        <div class="contacto-vias">
+            <a class="contacto-via" data-canal="whatsapp" target="_blank" rel="noopener">
+                <i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span>
+            </a>
+            <a class="contacto-via" data-canal="llamada">
+                <i class="fa-solid fa-phone"></i><span>Llamar</span>
+            </a>
+            <a class="contacto-via" data-canal="correo">
+                <i class="fa-solid fa-envelope"></i><span>Correo</span>
+            </a>
+        </div>
+
+        <form class="contacto-form" novalidate>
+            <label>
+                <span>Nombre</span>
+                <input type="text" name="nombre" autocomplete="name" placeholder="Tu nombre" required>
+            </label>
+            <label>
+                <span>Mensaje</span>
+                <textarea name="mensaje" rows="3" placeholder="Modelo, medidas, color..." required></textarea>
+            </label>
+            <button type="submit" class="contacto-enviar">Enviar por WhatsApp</button>
+            <p class="contacto-aviso" role="status" aria-live="polite"></p>
+        </form>
+
+    </div>
+</section>
