@@ -30,10 +30,10 @@ function iniciarMenu() {
     const existe = [...enlaces].some((e) => e.dataset.seccion === idInicial);
     activar(existe ? idInicial : SECCION_POR_DEFECTO);
 
-    // 2) Al hacer clic en una opción
-    enlaces.forEach((enlace) => {
-        enlace.addEventListener("click", () => activar(enlace.dataset.seccion));
-    });
+    // // 2) Al hacer clic en una opción
+    // enlaces.forEach((enlace) => {
+    //     enlace.addEventListener("click", () => activar(enlace.dataset.seccion));
+    // });
 
     // 3) Al hacer scroll: activa la sección que cruza el centro de la pantalla
     const observador = new IntersectionObserver(
@@ -53,4 +53,18 @@ function iniciarMenu() {
 
 document.addEventListener("componente-listo", (evento) => {
     if (evento.detail.nombre === "menu") iniciarMenu();
+});
+
+// Los enlaces internos (#catalogo, #contacto) bajan a la sección sin escribir el #hash en la barra
+document.addEventListener("click", (e) => {
+    const enlace = e.target.closest('a[href^="#"]');
+    if (!enlace) return;
+
+    const id = enlace.getAttribute("href").slice(1);
+    const destino = document.getElementById(id);
+    if (!destino) return;
+
+    e.preventDefault();
+    destino.scrollIntoView({ behavior: "smooth" });
+    history.replaceState(null, "", location.pathname + location.search);
 });
