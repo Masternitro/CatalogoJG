@@ -1,6 +1,6 @@
 // Arma el enlace de WhatsApp de cada tarjeta con el nombre y el precio del producto.
 
-const WHATSAPP_NUMERO = "50376302568"; // 503 + tu número
+const WHATSAPP_NUMERO = "50371514313"; // 503 + tu número
 
 document.querySelectorAll(".swiper-slide").forEach((tarjeta) => {
     const enlace = tarjeta.querySelector(".btn-whatsapp");

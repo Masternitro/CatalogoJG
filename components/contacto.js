@@ -2,9 +2,9 @@
 
 const CONTACTO = {
     //telefono: "50371514313",          // KALIN
-    telefono: "50376302568",          // con código de país, sin + ni espacios (503 = El Salvador)
-    telefonoVisible: "+503 7630 2568",
-    correo: "fg796041@gmail.com",
+    telefono: "50371514313",          // con código de país, sin + ni espacios (503 = El Salvador)
+    telefonoVisible: "+503 7151 4313",
+    correo: "gonzalezaroberto3@gmail.com",
     saludo: "Hola, me interesa una puerta del catálogo.",
 };
 
